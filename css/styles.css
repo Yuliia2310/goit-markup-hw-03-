@@ -1,0 +1,405 @@
+/* MAIN STYLES  */
+
+:root {
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --success: #31d0aa;
+    --text: #434455;
+    --subtle-text: #8e8f99;
+    --accent: #e7e9fc;
+    --light: #f4f4fd;
+    --white-text-color: #ffffff;
+    --Modal-overlay: #2E2F42;
+    --Hero-background: #2E2F42;
+    --main-font: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+    --indent: 24px;
+    --items: 3;
+
+}
+
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h6,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* reset end */
+
+
+body {
+
+    font-family: var(--main-font);
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    background-color: var(--white-text-color);
+    color: var(--dark);
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.project-set {
+    flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+}
+
+/* STYLES STUDIO */
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+/* ================= Header styles ================= */
+
+.header-page {
+
+    border-bottom: 1px solid var(--accent);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--dark);
+    text-transform: uppercase;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
+}
+
+.logo-accent {
+    color: var(--primary-brand);
+}
+
+
+.header-menu {
+    display: block;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--dark);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.current {
+    color: var(--primary-brand);
+}
+
+.header-menu:hover,
+.header-menu:focus {
+    color: var(--primary-brand);
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    line-height: 1.5;
+    color: var(--text);
+    margin-left: auto;
+}
+
+.header-contact:hover,
+.header-contact:focus {
+    color: var(--primary-brand);
+}
+
+/*================= /Header styles ================= */
+
+
+/*================= Hero ================= */
+.hero {
+    background-color: var(--Hero-background);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+}
+
+.hero-content {
+    width: 496px;
+    margin: auto;
+}
+
+.hero-txt {
+    text-align: center;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    color: var(--white-text-color);
+    margin-bottom: 48px;
+    width: 496px;
+
+}
+
+.hero-btn {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    text-align: center;
+    border: none;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-Size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-brand);
+    color: var(--white-text-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--pressed-state);
+    color: var(--white-text-color);
+}
+
+/*================= /Hero ================= */
+
+
+/*================= Advantages ================= */
+
+.advantages-content {
+    --items: 4;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.text {
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.services-list {
+    --items: 3;
+}
+
+.services {
+    text-align: center;
+    padding-top: 0px;
+}
+
+/* ================= /Advantages ================= */
+
+.title {
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+/*================= Team ================= */
+.team {
+    background-color: var(--light);
+}
+
+.team-list {
+    --items: 4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    box-shadow: 0px 1px 6px rgb(46, 47, 66, 0.16);
+}
+
+.team-wrapper {
+    flex-grow: 1;
+    padding: 32px 16px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/*================= /Team ================= */
+
+/* ===================  Footer    ================ */
+.footer {
+    background-color: var(--dark);
+    padding: 100px 0;
+}
+
+.footer-content {
+    width: 264px;
+    padding-top: 61px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+}
+
+.footer-text {
+    margin-top: 16px;
+    width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--accent);
+}
+
+.footer-logo {
+    color: var(--light);
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+    
+}
+
+/* ===================  /Footer    ================ */
+
+/* STYLES PORTFOLIO */
+
+/* ============== Filter ============= */
+.filter-btn {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand);
+    background-color: var(--light);
+    border: var(--accent);
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+.btn-styles {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+    justify-content: center;
+} 
+
+.filter-section {
+    align-items: center;
+    padding-top: 72px;
+    padding-bottom: 120px;
+    
+    
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--pressed-state);
+    color: var(--white-text-color);
+}
+
+.project-list
+{  border: 1px solid #E7E9FC;
+  border-top: 0px;
+ padding: 32px 16px;
+
+}
+
+.project-cards {
+    gap: 24px;
+    --items: 3;
+   
+}
+.portfolio-subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+
+
+.portfolio-text {
+        line-height: 1.5;
+        color: var(--text);
+        margin-bottom: 8px;
+    }
+   
+
